@@ -1,12 +1,12 @@
-title:              "블로그 제목"
-tagline:            "블로그 슬로건"
-email:              "your-email@example.com"
-description:        "블로그 설명"
-author:             "작성자 이름"
-baseurl:            "/"
-url:                "https://도메인"
+title:              "콘텐츠 육아일기"
+tagline:            "뽀짝에서 반짝이 될 우리의 콘텐츠"
+email:              "arimani100@naver.com"
+description:        "닭띠 마케터가 병아리에서 장닭이 되는 성장과정 및 콘텐츠 제작기"
+author:             "chaehyun"
+baseurl:            ""
+url:                "https://diarychae.me"
 locale:             "ko_KR"
-thumbnail:          "/img/thumbnail.jpg"
+thumbnail:          "/img/chae_thumbnail.png"
 
 # Social Profiles
 twitter_username:   twitter_username
