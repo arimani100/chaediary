@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diarychae.me/sitemap.xml
+#DaumWebMasterTool:b35c6eaf43b3c8379ff1f55d376535c0d27fac9771dd83629e9e0a230b389565:SBDn+3M1gAUD2c6N/ci3rg==
