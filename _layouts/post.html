@@ -4,10 +4,10 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-  <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-{% else %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
   <header class="masthead" style="background-image: url('{{ page.feature | prepend: site.baseurl | replace: '//', '/' }}')">
-{% endif %}
+    {% endif %}
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -36,7 +36,8 @@ layout: default
           <div class="clearfix">
 
             {% if page.previous.url %}
-            <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+            <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span
+                class="d-none d-md-inline">
                 Post</span></a>
             {% endif %}
             {% if page.next.url %}
@@ -50,5 +51,16 @@ layout: default
       </div>
     </div>
   </article>
+
+  <script>
+    var event = document.querySelector('#post-content');
+    event.addEventListener("click", function() {
+      gtag('event', '보기', {
+        'event_category': '글',
+        'event_label': '{{ page.title }}',
+        'value': 10
+      });
+    }, false);
+  </script>
 
   {% include disqus.html %}
