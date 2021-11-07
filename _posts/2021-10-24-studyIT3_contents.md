@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: studyIT3_contents/
-title: '비전공자를 위한 vim이란 무엇인가'
+title: '개발자와 잘 소통하려면'
 date: 2021-10-23 21:20:00 +09:00
 feature: '/img/posts/text9/main_img1024.png'
 categories:
